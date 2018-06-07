@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/mnt/main/academics'
+let g:netrw_dirhist_2='/home/gsmalik/.vim'
+let g:netrw_dirhist_3='/mnt/main/phd/submissions/fpt_2018/bft-deflection/vivado/axis_ic_exp/axis_ic_exp.runs/axis_interconnect_0_synth_1'
+let g:netrw_dirhist_4='/mnt/main/phd/submissions/fpt_2018/noc-reference/src/rtl/bft/bft_16'
