@@ -156,3 +156,16 @@ function latex_make ()
 	pdflatex "$1.tex"
 	gnome-open "$1.pdf"
 }
+
+function updatemylinuxsetup ()
+{
+	rm -rf mylinuxsetup 
+	git clone git@github.com:gsmalik/mylinuxsetup.git
+	cp -rf ${HOME}/.vim mylinuxsetup/
+	cp -rf ${HOME}/.vimrc ylinuxsetup/
+	cp -rf ${HOME}/.bashrc mylinuxsetup/
+	cd mylinuxsetup
+	git add -A
+	git commit -m "another update"
+	git push -u origin master	
+}
