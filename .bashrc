@@ -170,12 +170,3 @@ function updatemylinuxsetup ()
 	git push -u origin master	
 }
 
-change_background() {
-    FILE="'file://$(readlink -e "$1" )'" 
-    if [ "$FILE" != "'file://'" ] 
-    then
-        gsettings set org.gnome.desktop.background picture-uri "$FILE" 
-    else
-        echo "File doesn't exist" 
-    fi 
-} 
