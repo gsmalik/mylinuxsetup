@@ -1,3 +1,6 @@
+packages:
+	sudo apt-get install vim
+	sudo apt-get install vim-gnome
 bashrc:
 	cp -rf .bashrc ${HOME}/
 vimrc:
