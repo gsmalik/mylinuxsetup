@@ -5,3 +5,7 @@ vimrc:
 	cp -rf .vimrc ${HOME}/
 background:
 	gsettings set org.gnome.desktop.background picture-uri 'file://${PWD}/mywallpaper.jpg'
+all:
+	bashrc
+	vimrc
+	background
