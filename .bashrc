@@ -167,6 +167,7 @@ function updatemylinuxsetup ()
 	cd mylinuxsetup
 	git add -A
 	git commit -m "another update"
-	git push -u origin master	
+	git push -u origin master
+	cd ..	
 }
 
