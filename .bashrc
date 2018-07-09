@@ -140,25 +140,12 @@ alias open='gnome-open'
 alias matlab='/mnt/main/RESEARCH/SOFTWARE/INSTALLATION/MATLAB/bin/matlab &'
 alias connectjane='ssh gsmalik@jane.uwaterloo.ca'
 alias connecthex='ssh gsmalik@hex.uwaterloo.ca'
-alias connectagamemnon='ssh gsmalik@129.97.68.28'
-
-function eduroam_connect ()
-{
-	sudo rfkill unblock all
-	sudo rm -rf /var/run/wpa_supplicant/wlx00e04c13211e
-	sudo wpa_supplicant -i wlx00e04c13211e -D wext -c /etc/wpa_supplicant/wpa_supplicant.conf &
-	sleep 20
-	sudo dhclient
-}
-
-function latex_make ()
-{
-	pdflatex "$1.tex"
-	gnome-open "$1.pdf"
-}
+alias connectagamemnon='ssh gsmalik@agamemnon.eng.uwaterloo.ca'
+alias connectdeathstar='ssh gsmalik@deathstar.eng.uwaterloo.ca'
 
 function updatemylinuxsetup ()
 {
+	pushd ${HOME}
 	rm -rf mylinuxsetup 
 	git clone git@github.com:gsmalik/mylinuxsetup.git
 	cp -rf ${HOME}/.vim mylinuxsetup/
@@ -168,6 +155,6 @@ function updatemylinuxsetup ()
 	git add -A
 	git commit -m "another update"
 	git push -u origin master
-	cd ..	
+	popd
 }
 
