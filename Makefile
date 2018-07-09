@@ -1,3 +1,8 @@
+gitdetails:
+	ssh-keygen -t rsa
+	git config --global user.email gsmalik@uwaterloo.ca
+	git config --global user.name gsmalik
+
 bashrc:
 	cp -rf .bashrc ${HOME}/
 vimrc:
@@ -11,4 +16,4 @@ apps:
 	sudo apt-get install -y vim-gnome 
 	sudo apt-get install -y terminator 
 	sudo apt-get install -y vlc 
-all :	apps bashrc vimrc background
+all :	apps bashrc vimrc background gitdetails
