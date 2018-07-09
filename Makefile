@@ -1,6 +1,3 @@
-packages:
-	sudo apt-get install vim
-	sudo apt-get install vim-gnome
 bashrc:
 	cp -rf .bashrc ${HOME}/
 vimrc:
@@ -11,6 +8,7 @@ background:
 apps:
 	sudo apt-get install vim vim-gnome terminator vlc
 all : 
+	apps
 	bashrc 
 	vimrc 
 	background
