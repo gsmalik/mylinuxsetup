@@ -6,7 +6,8 @@ vimrc:
 background:
 	gsettings set org.gnome.desktop.background picture-uri 'file://${PWD}/mywallpaper.jpg'
 apps:
-	sudo apt-get install vim vim-gnome terminator vlc
+	sudo apt-get update
+	sudo apt-get install vim vim-gnome terminator vlc texlive-full
 all : 
 	apps
 	bashrc 
