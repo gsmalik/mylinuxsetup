@@ -1,3 +1,9 @@
+setuplabmachines:
+	ssh-copy-id gsmalik@jane.uwaterloo.ca
+	ssh-copy-id gsmalik@hex.uwaterloo.ca
+	ssh-copy-id gsmalik@deathstar.eng.uwaterloo.ca
+	ssh-copy-id gsmalik@agamemnon.eng.uwaterloo.ca
+
 gitdetails:
 	ssh-keygen -t rsa
 	git config --global user.email gsmalik@uwaterloo.ca
@@ -16,4 +22,4 @@ apps:
 	sudo apt-get install -y vim-gnome 
 	sudo apt-get install -y terminator 
 	sudo apt-get install -y vlc 
-all :	apps bashrc vimrc background gitdetails
+all :	apps bashrc vimrc background gitdetails setuplabmachines
