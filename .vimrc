@@ -28,3 +28,7 @@ imap <c-s> <Esc><c-s>
 nmap <F2> :update<CR>
 vmap <F2> <Esc><F2>gv
 imap <F2> <c-o><F2>
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
