@@ -2,6 +2,7 @@ latexstuff:
 	sudo add-apt-repository ppa:jonathonf/texlive
 	sudo apt update 
 	sudo apt install texlive-full
+	sudo apt-get install python-pygments
 setuplabmachines:
 	ssh-copy-id gsmalik@jane.uwaterloo.ca
 	ssh-copy-id gsmalik@hex.uwaterloo.ca
@@ -26,4 +27,5 @@ apps:
 	sudo apt-get install -y vim-gnome 
 	sudo apt-get install -y terminator 
 	sudo apt-get install -y vlc 
+	sudo apt install -y libgnome2-bin
 all :	apps bashrc vimrc background gitdetails setuplabmachines latexstuff
