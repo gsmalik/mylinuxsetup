@@ -10,6 +10,7 @@ setuplabmachines:
 	ssh-copy-id gsmalik@agamemnon.eng.uwaterloo.ca
 
 gitdetails:
+	sudo apt-get install git
 	ssh-keygen -t rsa
 	git config --global user.email gsmalik@uwaterloo.ca
 	git config --global user.name gsmalik
