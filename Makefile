@@ -1,9 +1,11 @@
 latexstuff:
-	sudo add-apt-repository ppa:jonathonf/texlive
+	sudo add-apt-repository  -y ppa:jonathonf/texlive
 	sudo apt update 
-	sudo apt install texlive-full
-	sudo apt-get install python-pygments
+	sudo apt install -y texlive-full
+	sudo apt-get install -y python-pygments
 setuplabmachines:
+	sudo apt-get install -y openssh-server 
+	sudo service ssh restart
 	ssh-copy-id gsmalik@jane.uwaterloo.ca
 	ssh-copy-id gsmalik@hex.uwaterloo.ca
 	ssh-copy-id gsmalik@deathstar.eng.uwaterloo.ca
