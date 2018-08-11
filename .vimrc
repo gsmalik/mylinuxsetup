@@ -33,6 +33,13 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 "end"
+"spell check inside vim"
+set spell
+set spelllang=en
+set spellfile=$HOME/.vim/spell/en.utf-8.add
+"end"
+
+hi SpellBad    ctermfg=015      ctermbg=000     cterm=bold
 
 "open file tree based on plugin nerdtree with ctrl o"
 map <C-o> :NERDTreeToggle<CR>
