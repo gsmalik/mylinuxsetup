@@ -142,6 +142,7 @@ alias connectjane='ssh gsmalik@jane.uwaterloo.ca'
 alias connecthex='ssh gsmalik@hex.uwaterloo.ca'
 alias connectagamemnon='ssh gsmalik@agamemnon.eng.uwaterloo.ca'
 alias connectdeathstar='ssh gsmalik@deathstar.eng.uwaterloo.ca'
+alias work='cd ${HOME}/work'
 
 function updatemylinuxsetup ()
 {
