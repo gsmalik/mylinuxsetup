@@ -39,9 +39,10 @@ apps:
 	sudo apt-get install -y vim-gnome 
 	sudo apt-get install -y terminator 
 	sudo apt-get install -y vlc 
-	sudo apt install -y libgnome2-bin
-	sudo apt-get install spotify-client
-	git clone --single-branch -b stable http://git.veripool.org/git/verilator
+	sudo apt-get install -y gnome-tweaks
+	sudo apt-get install -y libgnome2-bin
+	sudo apt-get install -y spotify-client
+	git clone --single-branch -b master http://git.veripool.org/git/verilator
 	unset VERILATOR_ROOT 
 	cd verilator
 	git pull      
@@ -52,4 +53,10 @@ apps:
 	sudo make install
 	cd ..
 	rm -rf verilator
-all :	apps bashrc vimrc background gitdetails setuplabmachines latexstuff
+docksettings:
+	gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+	gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+	gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
+	gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
+	gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0
+all :	apps bashrc vimrc background gitdetails setuplabmachines latexstuff docksettings
