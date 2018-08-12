@@ -53,10 +53,9 @@ apps:
 	sudo make install
 	cd ..
 	rm -rf verilator
-docksettings:
-	gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-	gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
-	gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
-	gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
-	gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0
-all :	apps bashrc vimrc background gitdetails setuplabmachines latexstuff docksettings
+themesettings:
+	sudo add-apt-repository ppa:system76/pop
+	sudo apt update
+	sudo apt install pop-theme
+	reboot
+all :	apps bashrc vimrc background gitdetails setuplabmachines latexstuff themesettings
