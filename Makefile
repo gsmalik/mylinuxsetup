@@ -28,6 +28,7 @@ apps:
 	echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 	sudo apt-get update
 	sudo apt-get install -y num-utils
+	sudo apt-get install -y r-base
 	sudo apt-get install -y parallel
 	sudo apt-get install -y git
 	sudo apt-get install -y make
