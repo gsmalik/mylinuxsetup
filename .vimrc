@@ -10,9 +10,6 @@ set number
 "colors according to syntax"
 syntax on
 "end"
-"indent according to filetype"
-filetype plugin indent on
-"end"
 
 "enables mouse clicks in vim"
 set mouse=a
