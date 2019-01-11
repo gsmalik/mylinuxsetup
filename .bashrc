@@ -157,6 +157,8 @@ function switch_prsnl ()
 }
 
 
+
+
 function updatemylinuxsetup ()
 {
 	pushd ${HOME}
@@ -172,3 +174,11 @@ function updatemylinuxsetup ()
 	popd
 }
 
+
+function setup_xcaffe
+{
+    source /home/gsmalik/work/FINN/env.sh
+    export SIM_ROOT=`pwd`
+    export RPNN_LIBRARY=`pwd`/../../../hls
+
+}
