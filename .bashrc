@@ -144,6 +144,19 @@ alias connectagamemnon='ssh gsmalik@agamemnon.eng.uwaterloo.ca'
 alias connectdeathstar='ssh gsmalik@deathstar.eng.uwaterloo.ca'
 alias work='cd ${HOME}/work'
 
+function switch_xlnx ()
+{
+	git config --global user.email malik@xilinx.com
+	git config --global user.name malik
+}
+
+function switch_prsnl ()
+{
+	git config --global user.email gsmalik@uwaterloo.ca
+	git config --global user.name gsmalik
+}
+
+
 function updatemylinuxsetup ()
 {
 	pushd ${HOME}

@@ -13,8 +13,8 @@ setuplabmachines:
 
 gitdetails:
 	ssh-keygen -t rsa
-	git config --global user.email gsmalik@uwaterloo.ca
-	git config --global user.name gsmalik
+	git config --global user.email malik@xilinx.com
+	git config --global user.name malik
 
 bashrc:
 	cp -rf .bashrc ${HOME}/
@@ -40,23 +40,7 @@ apps:
 	sudo apt-get install -y vim-gnome 
 	sudo apt-get install -y terminator 
 	sudo apt-get install -y vlc 
-	sudo apt-get install -y gnome-tweaks
 	sudo apt-get install -y libgnome2-bin
 	sudo apt-get install -y spotify-client
-	git clone --single-branch -b master http://git.veripool.org/git/verilator
-	unset VERILATOR_ROOT 
-	cd verilator
-	git pull      
-	git tag      
-	autoreconf -i configure.ac      
-	./configure
-	make
-	sudo make install
-	cd ..
-	rm -rf verilator
-themesettings:
-	sudo add-apt-repository ppa:system76/pop
-	sudo apt update
-	sudo apt install pop-theme
-	reboot
-all :	apps bashrc vimrc background gitdetails setuplabmachines latexstuff themesettings
+
+all :	apps bashrc vimrc background gitdetails
