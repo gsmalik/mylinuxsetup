@@ -8,6 +8,8 @@ case $- in
       *) return;;
 esac
 
+source /opt/Xilinx/Vivado/2018.2.xdf/.settings64-Vivado.sh
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
